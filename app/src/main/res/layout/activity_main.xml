@@ -48,55 +48,42 @@
         app:layout_constraintRight_toLeftOf="@id/upButton"
         app:layout_constraintTop_toTopOf="@id/upButton" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="270dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:cursorVisible="true"
-        android:gravity="center"
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clickCounter" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="#E91E63"
         android:onClick="newCount"
         android:text="New"
         android:textColor="#FFFFFF"
-        app:layout_constraintRight_toRightOf="@id/textView"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintLeft_toRightOf="@id/button5"
+        app:layout_constraintTop_toBottomOf="@id/editText" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="#E91E63"
         android:onClick="saveTitle"
         android:text="Save"
         android:textColor="#FFFFFF"
-        app:layout_constraintLeft_toLeftOf="@id/textView"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintRight_toLeftOf="@id/button5"
+        app:layout_constraintTop_toBottomOf="@id/editText" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="#E91E63"
         android:onClick="openCount"
         android:text="Open"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText" />
 
     <EditText
         android:id="@+id/clickIntervalViewer"
@@ -113,5 +100,18 @@
         app:layout_constraintBottom_toTopOf="@id/upButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
