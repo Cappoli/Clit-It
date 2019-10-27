@@ -21,13 +21,15 @@ public class MainActivity extends AppCompatActivity {
     TextView clickIntView;
     TextView titleBarYo;
 
+    public void newCount(View view){
 
 
+    }
+
+    public void openCount(View view) {
 
 
-
-
-
+    }
 
     //function to determine weather you are adding or subtracting the interval from the count
     public void upOrDown (View view) {
