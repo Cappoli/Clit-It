@@ -26,7 +26,7 @@
         android:layout_width="270dp"
         android:layout_height="100dp"
         android:layout_marginTop="32dp"
-        android:background="#5C6361"
+        android:background="#454E4C"
         android:gravity="center"
         android:textColor="#FFFCFC"
         android:textSize="45sp"
@@ -67,7 +67,9 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#E91E63"
         android:text="New"
+        android:textColor="#FFFFFF"
         app:layout_constraintRight_toRightOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
@@ -75,8 +77,10 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#E91E63"
         android:onClick="saveTitle"
         android:text="Save"
+        android:textColor="#FFFFFF"
         app:layout_constraintLeft_toLeftOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
@@ -84,7 +88,9 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#E91E63"
         android:text="Open"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button4"
