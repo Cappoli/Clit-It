@@ -9,11 +9,50 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //initiate click tracking variables
-    int clickValue = 0;
+    boolean upOrDown = true;    //used to flip whether the clicks add or subtract from the total count
+    char plusOrMinus;           //'+' when adding clicks '-' when subtracting clicks
+    String currentCount;
+
+
+    public void newButton(View view){
+        //Create new clickCount with a title based on the text field
+        //Set int 'count' to 0
+        //Set currentCount to clickCount'title'
+
+    }
+
+    public void clickCount(View view){
+        //Increase count if increasing
+        //Decrease count if decreasing
+
+    }
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+
+    class clickCount{
+
+        String name;    //Name
+        int count;      //Click count
+
+    }
+
+
+
+
+//initiate click tracking variables
+   /* int clickValue = 0;
     int clickInterval = 1;
     boolean upOrDown = true;
     char plusOrMinus = ' ';
+
 
     TextView clickCounting;
     TextView intervalTracker;
@@ -141,21 +180,5 @@ public class MainActivity extends AppCompatActivity {
 
         clickIntView = findViewById(R.id.clickIntervalViewer);
 
-        clickIntView.setText(String.valueOf(clickInterval));
+        clickIntView.setText(String.valueOf(clickInterval));*/
 
-
-
-
-
-
-    }
-
-    class clickCount{
-
-        //Name
-        //Click count
-
-    }
-
-
-}
