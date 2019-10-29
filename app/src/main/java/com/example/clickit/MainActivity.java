@@ -17,6 +17,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+        public void UpOrDown(View view){
+
+            //Flip the up or down boolean
+            //Display + if true
+            //Display - if false
+
+
+        }
+
+        public void saveTitle(View view){
+
+        }
+
+        public void openCount(View view){
+
+        }
+
         public void newButton (View view){
             //Create new clickCount with a title based on the text field
             //Set int 'count' to 0
@@ -25,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void clickCount (View view){
-            //Increase count if increasing
-            //Decrease count if decreasing
+            //Increase count if up or down boolean is true
+            //Decrease count if up or down boolean is false
 
         }
 
