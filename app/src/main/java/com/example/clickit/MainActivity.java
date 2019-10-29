@@ -98,8 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     }
 
     public void openTitle(View view) {
