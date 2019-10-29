@@ -95,9 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void saveTitle(View view) {
-
-
-
+        //Use hint to display title of count
     }
 
     public void openTitle(View view) {
@@ -149,6 +147,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+    }
+
+    class clickCount{
+
+        //Name
+        //Click count
 
     }
 
