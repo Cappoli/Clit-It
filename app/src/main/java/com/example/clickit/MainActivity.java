@@ -13,19 +13,22 @@ public class MainActivity extends AppCompatActivity {
     char plusOrMinus;           //'+' when adding clicks '-' when subtracting clicks
     String currentCount;
 
-
-    public void newButton(View view){
-        //Create new clickCount with a title based on the text field
-        //Set int 'count' to 0
-        //Set currentCount to clickCount'title'
+    public static void main(String[] args) {
 
     }
 
-    public void clickCount(View view){
-        //Increase count if increasing
-        //Decrease count if decreasing
+        public void newButton (View view){
+            //Create new clickCount with a title based on the text field
+            //Set int 'count' to 0
+            //Set currentCount to clickCount'title'
 
-    }
+        }
+
+        public void clickCount (View view){
+            //Increase count if increasing
+            //Decrease count if decreasing
+
+        }
 
 
 
@@ -34,15 +37,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-}
 
 
-    class clickCount{
+    class clickCount {
 
         String name;    //Name
         int count;      //Click count
 
     }
+}
 
 
 
