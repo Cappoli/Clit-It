@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
     int counter;
     int interval = 1;
     String currentCount;
-    TextView possiNeggi = findViewById(R.id.downButton);
-    TextView clickCounting = findViewById(R.id.clickCounter);
+    TextView possiNeggi;
+    TextView clickCounting;
     String clickButton;
-    TextView intervalTracker = findViewById(R.id.upButton);
+    TextView intervalTracker;
 
     public static void main(String[] args) {
 
@@ -29,8 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
             if (upOrDown) { plusOrMinus = '+';}                 //change value of plusOrMinus based on up or down
             else {plusOrMinus = '-';}
+
+
+            possiNeggi = findViewById(R.id.downButton);
             possiNeggi.setText(String.valueOf(plusOrMinus));    //Display value of plusOrMinus
-            }
+
+
+
+        }
 
         public void saveTitle(View view){
             //Save current count with title from title bar
@@ -56,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
             }else{
                counter -= interval; //Decrease count if up or down boolean is false
             }
+
+            clickCounting = findViewById(R.id.clickCounter);
             clickCounting.setText(String.valueOf(counter)); //Updates displayed value of current count
 
         }
@@ -70,8 +78,13 @@ public class MainActivity extends AppCompatActivity {
         if (upOrDown) { plusOrMinus = '+';}                 //change value of plusOrMinus based on up or down
         else {plusOrMinus = '-';}
 
+        possiNeggi = findViewById(R.id.downButton);
         possiNeggi.setText(String.valueOf(plusOrMinus));
+
+        clickCounting = findViewById(R.id.clickCounter);    //display value of the current count
         clickCounting.setText(String.valueOf(counter));
+
+        intervalTracker = findViewById(R.id.upButton);
         intervalTracker.setText("Click");
     }
 
