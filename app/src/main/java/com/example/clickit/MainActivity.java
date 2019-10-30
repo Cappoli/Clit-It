@@ -11,8 +11,13 @@ public class MainActivity extends AppCompatActivity {
 
     boolean upOrDown = true;    //used to flip whether the clicks add or subtract from the total count
     char plusOrMinus;           //'+' when adding clicks '-' when subtracting clicks
+    int counter;
+    int interval = 1;
     String currentCount;
     TextView possiNeggi;
+    TextView clickCounting;
+    String clickButton;
+    TextView intervalTracker;
 
     public static void main(String[] args) {
 
@@ -53,8 +58,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void clickCount (View view){
-            //Increase count if up or down boolean is true
-            //Decrease count if up or down boolean is false
+            if (plusOrMinus == '+'){
+                counter += interval;//Increase count if up or down boolean is true
+            }else{
+               counter -= interval; //Decrease count if up or down boolean is false
+            }
+
+            clickCounting = findViewById(R.id.clickCounter);
+            clickCounting.setText(String.valueOf(counter));
 
         }
 
@@ -64,6 +75,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (upOrDown) { plusOrMinus = '+';}                 //change value of plusOrMinus based on up or down
+        else {plusOrMinus = '-';}
+
+        possiNeggi = findViewById(R.id.downButton);
+
+        possiNeggi.setText(String.valueOf(plusOrMinus));
+
+        clickCounting = findViewById(R.id.clickCounter);    //display value of the current count
+
+        clickCounting.setText(String.valueOf(counter));
+
+        intervalTracker = findViewById(R.id.upButton);
+
+        intervalTracker.setText("Click");
     }
 
 

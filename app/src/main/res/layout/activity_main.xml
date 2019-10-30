@@ -17,9 +17,10 @@
         android:onClick="clickCount"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
-        android:textSize="80sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/clickCounter" />
+        app:layout_constraintRight_toRightOf="@id/clickCounter"
+        tools:text="Click!" />
 
     <TextView
         android:id="@+id/clickCounter"
