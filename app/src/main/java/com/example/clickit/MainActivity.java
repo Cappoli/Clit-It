@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     boolean upOrDown = true;    //used to flip whether the clicks add or subtract from the total count
     char plusOrMinus;           //'+' when adding clicks '-' when subtracting clicks
     String currentCount;
+    TextView possiNeggi;
 
     public static void main(String[] args) {
 
@@ -19,18 +20,28 @@ public class MainActivity extends AppCompatActivity {
 
         public void UpOrDown(View view){
 
-            //Flip the up or down boolean
-            //Display + if true
-            //Display - if false
+            upOrDown = !upOrDown;                               //Flip the up or down boolean
+
+            if (upOrDown) { plusOrMinus = '+';}                 //change value of plusOrMinus based on up or down
+            else {plusOrMinus = '-';}
+
+
+            possiNeggi = findViewById(R.id.downButton);
+
+            possiNeggi.setText(String.valueOf(plusOrMinus));    //Display value of plusOrMinus
+
 
 
         }
 
         public void saveTitle(View view){
+            //Save current count with title from title bar
 
         }
 
         public void openCount(View view){
+            //Bring up a list of saved counts
+            //open selected count
 
         }
 
@@ -56,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    class clickCount {
+    class clickCounts {
 
         String name;    //Name
         int count;      //Click count
