@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView clickCounting;
     String clickButton;
     TextView intervalTracker;
+    TextView viewInterval;
 
     public static void main(String[] args) {
 
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void clickCount (View view){
+
+            EditText clickValueMang = findViewById(R.id.clickIntervalViewer);
+
+            String clickInterView = clickValueMang.getText().toString();
+
+            interval = Integer.parseInt(clickInterView);
+
             if (plusOrMinus == '+'){
                 counter += interval;//Increase count if up or down boolean is true
             }else{
@@ -86,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
 
         intervalTracker = findViewById(R.id.upButton);
         intervalTracker.setText("Click");
+
+        viewInterval = findViewById(R.id.clickIntervalViewer);
+        viewInterval.setText(String.valueOf(interval));
     }
 
 
