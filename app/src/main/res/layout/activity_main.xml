@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009688"
+    android:background="#00009688"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/backGroundCopy" />
 
     <Button
         android:id="@+id/upButton"
-        android:layout_width="170dp"
-        android:layout_height="145dp"
-        android:layout_marginBottom="40dp"
-        android:background="#FF9800"
+        android:layout_width="191dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/clickButtonCoppy"
         android:longClickable="true"
         android:onClick="clickCount"
         android:textColor="#FFFFFF"
@@ -27,7 +39,7 @@
         android:layout_width="270dp"
         android:layout_height="100dp"
         android:layout_marginTop="32dp"
-        android:background="#454E4C"
+        android:background="#00454E4C"
         android:gravity="center"
         android:textColor="#FFFCFC"
         android:textSize="45sp"
@@ -41,7 +53,7 @@
         android:id="@+id/downButton"
         android:layout_width="100dp"
         android:layout_height="145dp"
-        android:background="#4CAF50"
+        android:background="#004CAF50"
         android:onClick="UpOrDown"
         android:textColor="#FFFFFF"
         android:textColorLink="#00FFFFFF"
@@ -53,37 +65,14 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#E91E63"
+        android:layout_marginTop="76dp"
+        android:background="#00E91E63"
         android:onClick="newButton"
         android:text="New"
         android:textColor="#FFFFFF"
-        app:layout_constraintLeft_toRightOf="@id/button5"
-        app:layout_constraintTop_toBottomOf="@id/editText" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#E91E63"
-        android:onClick="saveTitle"
-        android:text="Save"
-        android:textColor="#FFFFFF"
-        app:layout_constraintRight_toLeftOf="@id/button5"
-        app:layout_constraintTop_toBottomOf="@id/editText" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#E91E63"
-        android:onClick="openCount"
-        android:text="Open"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@id/editText" />
 
     <EditText
@@ -91,7 +80,7 @@
         android:layout_width="270dp"
         android:layout_height="75dp"
         android:layout_marginBottom="8dp"
-        android:background="#454E4C"
+        android:background="#00454E4C"
         android:ems="10"
         android:gravity="center"
         android:inputType="number"
