@@ -1,4 +1,4 @@
-package app.example.clickit;
+package app.rockit.clickit;
 
 import org.junit.Test;
 

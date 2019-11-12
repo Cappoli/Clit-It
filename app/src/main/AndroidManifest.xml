@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="app.example.clickit.MenueNavigator"
+            android:name="app.rockit.clickit.MenueNavigator"
             android:label="@string/title_activity_menue_navigator"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="app.example.clickit.MainActivity">
+        <activity android:name="app.rockit.clickit.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
