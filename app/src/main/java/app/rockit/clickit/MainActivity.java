@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
     char plusOrMinus;           //'+' when adding clicks '-' when subtracting clicks
     int counter;
     int interval = 1;
-    String currentCount;
+
     TextView possiNeggi;
     TextView clickCounting;
-    String clickButton;
+
     TextView intervalTracker;
     TextView viewInterval;
 
@@ -102,12 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    class clickCounts {
 
-        String name;    //Name
-        int count;      //Click count
-
-    }
 }
 
 
